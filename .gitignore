@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Logs & env
+*.log
+.env
+.env.*
+
+# Browser "Save Page As" dumps (itch.io reference, not source)
+Resources_Itch/Itch_Save/
+
+# Extracted itch.io CDN thumbnails (duplicates from saved pages)
+Resources_Itch/Games/
+
+# Generated monitor frame (see scripts/make_monitor_frame.ps1)
+Resources_Itch/Assets/Monitor_Frame.png
