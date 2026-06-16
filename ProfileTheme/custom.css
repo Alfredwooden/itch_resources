@@ -3,16 +3,14 @@
   Paste into: Profile page → Edit theme → Misc → Custom CSS
 
   BEFORE PASTING:
-  1. Upload Assets/Monitor_Frame.png somewhere with HTTPS
-     (e.g. itch.io image host, your site, or a GitHub raw URL).
-  2. Replace MONITOR_FRAME_URL below with that URL.
-  3. Tune --monitor-inset if the cover art doesn't sit in the screen hole.
+  1. Ensure Assets/Monitor_Frame.png is pushed to this repo (GitHub raw URL below).
+  2. Tune --monitor-inset if the cover art doesn't sit in the screen hole.
 
   itch.io custom CSS limit: 5120 characters. This file is kept under that.
 */
 
 #wrapper {
-  --monitor-frame: url("MONITOR_FRAME_URL");
+  --monitor-frame: url("https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/Monitor_Frame.png");
   --monitor-inset: 15.5%;
   --card-bg: #2e2e2e;
   --title-cream: #f0e6d2;

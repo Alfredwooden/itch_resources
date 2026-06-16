@@ -20,16 +20,19 @@ Recreates the reference mockup using itch.io's **theme editor** + **custom CSS**
 ### Limitations
 
 1. **5120 character CSS cap** — the provided `custom.css` fits under this. If you grow it, split with `@import` from a CDN (see [nndda/itchio-profile](https://github.com/nndda/itchio-profile)).
-2. **Monitor asset must be hosted over HTTPS** — itch.io won't load local files. Upload `Assets/Monitor_Frame.png` (transparent screen version) to your site or an image host.
+2. **Monitor asset must be hosted over HTTPS** — itch.io won't load local files. This repo hosts `Assets/` via GitHub raw URLs (see step 1 below).
 3. **Can't remove itch.io footer** — you can add your custom footer above it, but the "itch.io · Community profile" links must stay visible per itch.io rules.
 4. **Collections** — hidden in the sample CSS. Remove those rules if you want them back.
-5. **Discord link in mockup** — your saved profile uses the itch.io profile link instead; add Discord in **Settings → Profile → Links**.
+5. **Discord link in mockup** — add Discord in **Settings → Profile → Links** if you want it on the live profile.
 
 ## Assets
 
+Hosted in this repo for GitHub raw URLs (`https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/...`).
+
 | File | Purpose |
 |---|---|
-| `Assets/Monitor_Clean.png` | Original frame (opaque black screen) |
+| `Assets/Monitor.png` | Full monitor artwork |
+| `Assets/Monitor_Clean.png` | Source frame (opaque black screen) for the generator script |
 | `Assets/Monitor_Frame.png` | Generated frame with **transparent screen** for CSS overlay |
 | `Assets/Reference.png` | Target design mockup |
 
@@ -50,21 +53,15 @@ Match your reference before pasting custom CSS:
 
 ## Installation steps
 
-### 1. Host the monitor frame
+### 1. Monitor frame URL
 
-Upload `Assets/Monitor_Frame.png` and copy the HTTPS URL.
-
-Open `ProfileTheme/custom.css` and replace:
+`custom.css` points at the GitHub raw URL for this repo:
 
 ```
-MONITOR_FRAME_URL
+https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/Monitor_Frame.png
 ```
 
-with your URL, e.g.:
-
-```
-https://www.theycallmealfred.com/assets/Monitor_Frame.png
-```
+After changing `Assets/Monitor_Frame.png`, commit and push so itch.io picks up the update.
 
 ### 2. Paste custom CSS
 
