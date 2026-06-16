@@ -1,18 +1,9 @@
-/*
-  Alfredwooden itch.io profile theme
-  Paste into: Profile page → Edit theme → Misc → Custom CSS
-
-  BEFORE PASTING:
-  1. Ensure Assets/Monitor_Frame.png is pushed to this repo (GitHub raw URL below).
-  2. Tune --monitor-inset if the cover art doesn't sit in the screen hole.
-
-  itch.io custom CSS limit: 5120 characters. This file is kept under that.
-*/
+/* itch.io profile theme — paste in Edit theme → Misc → Custom CSS (5120 char cap) */
 
 #wrapper {
+  --page-bg: url("https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/background.png");
   --monitor-frame: url("https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/Monitor_Clean.png");
   --monitor-inset: 15.5%;
-  --card-bg: #2e2e2e;
   --title-cream: #f0e6d2;
   --accent: #ff5c5c;
   --muted: rgba(210, 210, 210, 0.72);
@@ -20,6 +11,9 @@
 
 #wrapper.user_page_wrap {
   background-color: #1c1c1c !important;
+  background-image: var(--page-bg) !important;
+  background-repeat: repeat;
+  background-size: 256px auto;
 }
 
 /* Header */
@@ -70,16 +64,10 @@
 
 /* Game cards */
 #wrapper .user_game_grid .game_cell {
-  background: var(--card-bg);
+  background: transparent;
   border-radius: 14px;
   padding: 14px 14px 16px;
   box-sizing: border-box;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#wrapper .user_game_grid .game_cell:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 #wrapper .user_game_grid .game_cell_data {

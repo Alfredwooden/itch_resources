@@ -31,9 +31,10 @@ Hosted in this repo for GitHub raw URLs (`https://raw.githubusercontent.com/Alfr
 
 | File | Purpose |
 |---|---|
+| `Assets/background.png` | Tiled page background texture |
 | `Assets/Monitor.png` | Full monitor artwork |
-| `Assets/Monitor_Clean.png` | Source frame (opaque black screen) for the generator script |
-| `Assets/Monitor_Frame.png` | Generated frame with **transparent screen** for CSS overlay |
+| `Assets/Monitor_Clean.png` | Monitor bezel overlay on game thumbnails |
+| `Assets/Monitor_Frame.png` | Generated frame with **transparent screen** (from script) |
 | `Assets/Reference.png` | Target design mockup |
 
 ## Theme editor settings (recommended)
@@ -53,15 +54,9 @@ Match your reference before pasting custom CSS:
 
 ## Installation steps
 
-### 1. Monitor frame URL
+### 1. Asset URLs
 
-`custom.css` points at the GitHub raw URL for this repo:
-
-```
-https://raw.githubusercontent.com/Alfredwooden/itch_resources/main/Assets/Monitor_Frame.png
-```
-
-After changing `Assets/Monitor_Frame.png`, commit and push so itch.io picks up the update.
+`custom.css` loads assets from this repo via GitHub raw URLs (`Assets/background.png`, `Assets/Monitor_Clean.png`, etc.). Commit and push after changing any asset so itch.io picks up updates.
 
 ### 2. Paste custom CSS
 
