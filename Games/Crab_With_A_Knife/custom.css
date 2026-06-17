@@ -1,0 +1,47 @@
+/* Crab With a Knife — paste in Edit game → Theme → Misc → Custom CSS (5120 cap) */
+#wrapper{
+  --ink:#1e2a32;
+  --heading:#0f3d4a;
+  --coral:#c45c2a;
+  --muted:#2a3a42;
+  --title-teal:#48b1a4;
+  --title-teal-shadow:#2d7068;
+  --title-gold:#ead09f;
+  --title-pink:#e86a8c;
+  --title-pink-shadow:#b14d66;
+  --itchio_link_color:var(--coral);
+}
+.view_game_page.view_flash_game_page .embed_wrapper, .view_game_page.view_html_game_page .embed_wrapper {margin: 0;}
+#wrapper .custom-title{text-align:center;line-height:.92;margin:0 0 1.1rem}
+#wrapper .custom-title-crab{color:var(--title-teal)!important;font-size:clamp(2.4rem,9vw,3.4rem);font-weight:900;letter-spacing:.03em;text-transform:uppercase;text-shadow:2px 3px 0 var(--title-teal-shadow),0 2px 10px rgba(72,177,164,.35)}
+#wrapper .custom-title-with{color:var(--title-gold)!important;font-size:clamp(.95rem,3.5vw,1.15rem);font-weight:800;letter-spacing:.12em;text-transform:lowercase;margin:-.15rem 0 .05rem;text-shadow:1px 1px 0 rgba(120,90,50,.35)}
+#wrapper .custom-title-knife{color:var(--title-pink)!important;font-size:clamp(2.4rem,9vw,3.4rem);font-weight:900;letter-spacing:.06em;text-shadow:2px 3px 0 var(--title-pink-shadow),0 2px 10px rgba(232,106,140,.35)}
+#wrapper.view_game_page.view_flash_game_page .embed_wrapper,#wrapper.view_game_page.view_html_game_page .embed_wrapper{margin:0}
+#wrapper .embed_wrapper{border:4px solid #fff!important;border-radius:16px!important;overflow:hidden!important;box-sizing:border-box!important}
+#wrapper .embed_wrapper .game_frame{border:none!important;border-radius:0!important;overflow:hidden!important}
+#wrapper .header h1{color:var(--heading)!important;font-weight:700!important;letter-spacing:-.02em;text-shadow:0 1px 2px rgba(255,255,255,.6)}
+#wrapper .formatted_description{color:var(--muted)!important;font-size:1.02em;line-height:1.65;max-width:100%}
+#wrapper .custom-summary{font-size:1.12em;color:var(--ink)!important;margin:0 0 1.25rem;text-shadow:0 1px 2px rgba(255,255,255,.5)}
+#wrapper .custom-crab-strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 1.5rem}
+#wrapper .custom-crab-strip img{width:100%;height:auto;display:block;border-radius:10px;border:4px solid rgba(15,61,74,.2);box-shadow:0 6px 18px rgba(0,0,0,.2);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+#wrapper .custom-crab-strip img:hover{transform:scale(1.03) rotate(var(--r,0deg))}
+#wrapper .custom-crab-strip img:nth-child(1){--r:-1.5deg}
+#wrapper .custom-crab-strip img:nth-child(2){--r:1.2deg}
+#wrapper .custom-crab-strip img:nth-child(3){--r:1.8deg}
+#wrapper .custom-crab-strip img:nth-child(4){--r:-1deg}
+#wrapper .custom-jam-badge{display:inline-block;background:rgba(255,255,255,.55);border:1px solid rgba(15,61,74,.25);border-radius:999px;padding:.45rem 1rem;margin:0 0 1.25rem;color:var(--ink)!important}
+#wrapper .custom-jam-badge a{color:var(--coral)!important;font-weight:700;text-decoration:none}
+#wrapper .custom-jam-badge a:hover{text-decoration:underline}
+#wrapper .custom-desc h2{color:var(--heading)!important;font-size:1.35em;margin:1.5rem 0 .5rem;font-weight:700;text-shadow:0 1px 2px rgba(255,255,255,.5)}
+#wrapper .custom-desc ul{margin:.25rem 0 1rem;padding-left:1.25rem}
+#wrapper .custom-desc li{margin:.35rem 0;color:var(--muted)!important}
+#wrapper .custom-desc strong{color:var(--ink)!important}
+#wrapper .custom-desc a{color:var(--coral)!important;font-weight:600}
+#wrapper .custom-note{color:rgba(30,42,50,.7)!important;font-size:.92em;margin-top:1.5rem}
+#wrapper .left_col.column{background:rgba(255,255,255,.45)!important;border:4px solid #fff!important;border-radius:14px;padding:1.25rem 1.5rem!important;box-sizing:border-box}
+#wrapper .right_col .screenshot{border-radius:10px;overflow:hidden;transition:transform .3s ease}
+#wrapper .right_col .screenshot:hover{transform:scale(1.04) rotate(1deg)}
+@media (max-width:760px){
+  #wrapper .custom-crab-strip{grid-template-columns:1fr}
+  #wrapper .left_col.column{padding:1rem!important}
+}
